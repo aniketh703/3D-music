@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+.container{
+    display: flex;
+}
+.hero{
+    background-color: yellow;
+    width: 50vw;
+    height: 100vh;
+}
+.mute-button {
+    position: absolute;
+    top: 20px; /* Adjust the vertical position as needed */
+    left: 20px; /* Adjust the horizontal position as needed */
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .mute-button__button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .mute-button__button ion-icon {
+    font-size: 32px; /* Increase the font size for a larger icon */
+    margin-right: 10px;
+    width: 24px; /* Set the width to match the icon size */
+    height: 24px; /* Set the height to match the icon size */
+  }
+.disc{
+    background-color: blanchedalmond;
+    width: 50vw;
+    height: 100vh;
+}
+@media only screen and (max-width:600px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .disc{
+        width: 100vw;
+        height: 50vh;
+    }
+    .hero{
+        width: 100vw;
+        height: 50vh;
+    }
+    
+}
